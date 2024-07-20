@@ -76,5 +76,3 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Footer 요소를 찾을 수 없습니다.');
     }
 });
-
-
