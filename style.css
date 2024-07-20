@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Abster';
-    src: url('font/abster-webfont.woff2') format('woff2'),
-    url('font/abster-webfont.woff') format('woff');
+    src: url('Font/font/abster-webfont.woff2') format('woff2'),
+    url('Font/font/abster-webfont.woff') format('woff');
 }
 
 * {

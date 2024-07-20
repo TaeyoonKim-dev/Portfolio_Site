@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <script type="text/javascript" nonce="adbd419b55374c8385f52f54b47" src="//local.adguard.org?ts=1721460663159&amp;type=content-script&amp;dmn=api.netlify.com&amp;url=https%3A%2F%2Fapi.netlify.com%2Fapi%2Fv1%2Fdeploys%2F669b4f3b09fafc15144788c6%2Ffiles%2Ftyping.html&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="adbd419b55374c8385f52f54b47" src="//local.adguard.org?ts=1721460663159&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fuzzy+Bubbles&family=Questrial&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="https://i.ibb.co/6wgS8Sk/favicon.png">
+
+  <style>
+    /* 기본 스타일링 */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #363636, #1a1a1a);
+      margin: 0;
+      color: #fff;
+      font-family: 'Questrial', sans-serif;
+      overflow: hidden;
+    }
+
+    .section {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #contact-links p {
+      margin: 10px 0;
+    }
+
+    #dynamic {
+      font-family: 'Fuzzy Bubbles', cursive;
+      font-size: 2rem;
+      color: #fff;
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      line-height: 1.5;
+      animation: slideInFromLeft 1s ease-out;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00aaff;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* 추가 애니메이션 */
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* 버튼에 확대 효과 추가 */
+    }
+
+    /* 그림자 효과 추가 */
+    .button {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 600px) {
+      .section h2 {
+        font-size: 1.8rem;
+      }
+
+      #dynamic {
+        font-size: 1.5rem;
+      }
+
+      .button {
+        padding: 8px 16px;
+      }
+    }
+
+    /* 로딩 상태 스타일 */
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div id="loading">Loading...</div> <!-- 로딩 상태 표시 -->
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <div id="contact-links">
+    <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" aria-label="Email me">taeyoonkim.business@gmail.com (Click)</a>.</p>
+    <p>You can also find me on <a href="https://www.instagram.com/taeyoon_0526" target="_blank" aria-label="Instagram profile">Instagram (Click)</a>.</p>
+  </div>
+  <a href="#" class="button" aria-label="Contact Form">Contact Form</a>
+</section>
+
+<p id="dynamic"></p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 로딩 상태 제거
+    document.getElementById('loading').style.display = 'none';
+
+    let target = document.querySelector("#dynamic");
+    let stringArr = [
+      "My name is Taeyoon Kim",
+      "I am a first year of middle school",
+      "I live in Daegu, Korea",
+      "Instagram - @taeyoon_0526",
+      "Continue.."
+    ];
+    let index = 0;
+
+    function displayText(text, charIndex) {
+      if (charIndex <= text.length) {
+        target.innerHTML = text.slice(0, charIndex);
+        setTimeout(() => displayText(text, charIndex + 1), 70);
+      } else {
+        setTimeout(eraseText, 1500);
+      }
+    }
+
+    function eraseText() {
+      let currentText = target.innerHTML;
+      if (currentText.length > 0) {
+        target.innerHTML = currentText.slice(0, -1);
+        setTimeout(eraseText, 60);
+      } else {
+        updateIndex();
+        setTimeout(displayNextText, 1000);
+      }
+    }
+
+    function updateIndex() {
+      index = (index + 1) % stringArr.length;
+    }
+
+    function displayNextText() {
+      displayText(stringArr[index], 0);
+    }
+
+    // 초기 호출
+    displayNextText();
+  });
+</script>
+
+</body>
+</html>
