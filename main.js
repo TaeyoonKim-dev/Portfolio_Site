@@ -27,7 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav ul li a');
     const sections = document.querySelectorAll('section');
 
-    window.addEventListener('scroll', () => {
+    // 디바운스 함수 (스크롤 이벤트 최적화)
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(func, wait);
+        };
+    }
+
+    // 스크롤 이벤트 핸들러
+    const handleScroll = debounce(() => {
         const scrollPosition = window.scrollY + 150;
 
         sections.forEach(section => {
@@ -40,7 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
-    });
+    }, 100); // 100ms 디바운스
+
+    window.addEventListener('scroll', handleScroll);
 
     // Intersection Observer for section animations
     const sectionObserver = new IntersectionObserver(entries => {
@@ -51,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 entry.target.classList.remove('animate');
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: [0.25, 0.5, 0.75] }); // 다양한 임계값 설정
 
     sections.forEach(section => {
         sectionObserver.observe(section);
@@ -75,4 +87,23 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Footer 요소를 찾을 수 없습니다.');
     }
+
+    // 섹션 간 이동 시 현재 위치 표시
+    const highlightCurrentSection = () => {
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                section.classList.add('current');
+            } else {
+                section.classList.remove('current');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', highlightCurrentSection);
+    highlightCurrentSection(); // 초기 호출로 현재 위치 표시
 });
