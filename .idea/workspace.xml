@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-22">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typing.html" beforeDir="false" afterPath="$PROJECT_DIR$/typing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721616995142</updated>
       <workItem from="1721616997403" duration="3672000" />
-      <workItem from="1721620884469" duration="973000" />
+      <workItem from="1721620884469" duration="2312000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -128,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721621031149</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2024-07-22">
+      <option name="closed" value="true" />
+      <created>1721621908338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721621908338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
