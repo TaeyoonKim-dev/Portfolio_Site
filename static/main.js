@@ -118,9 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Error logging IP:', error);
         });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
     // 현재 시각을 가져오기
     const timestamp = new Date().toISOString();
 
