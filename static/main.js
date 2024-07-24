@@ -119,3 +119,45 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Error logging IP:', error);
         });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 현재 시각을 가져오기
+    const timestamp = new Date().toISOString();
+
+    // 사용자 에이전트 정보 가져오기
+    const userAgent = navigator.userAgent;
+
+    // IP 주소를 가져오기 위한 API 호출
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const ip = data.ip;
+
+            // 페이지에 IP 정보 업데이트
+            document.getElementById('ip-address').textContent = `IP Address: ${ip}`;
+            document.getElementById('user-agent').textContent = `User Agent: ${userAgent}`;
+            document.getElementById('timestamp').textContent = `Timestamp: ${timestamp}`;
+
+            // 서버로 IP 주소, 사용자 에이전트 및 시각 전송
+            fetch('/log_info', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ip: ip,
+                    user_agent: userAgent,
+                    timestamp: timestamp
+                })
+            })
+                .catch(error => {
+                    console.error('Error logging information:', error);
+                });
+        })
+        .catch(error => {
+            document.getElementById('ip-address').textContent = 'Failed to fetch IP address';
+            document.getElementById('user-agent').textContent = 'Failed to fetch User Agent';
+            document.getElementById('timestamp').textContent = 'Failed to fetch Timestamp';
+            console.error('Error fetching IP information:', error);
+        });
+});
