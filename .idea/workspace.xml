@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-27">
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1721794936630" duration="3130000" />
       <workItem from="1721883292044" duration="49000" />
       <workItem from="1722060466693" duration="1816000" />
-      <workItem from="1722062802622" duration="196000" />
+      <workItem from="1722062802622" duration="517000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -197,7 +195,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721797615836</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2024-07-27 - Copyright &amp; License">
+      <option name="closed" value="true" />
+      <created>1722063038905</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722063038905</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2024-07-27 - Copyright &amp; License">
+      <option name="closed" value="true" />
+      <created>1722063303330</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722063303330</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2024-07-27">
+      <option name="closed" value="true" />
+      <created>1722063322881</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722063322881</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +254,8 @@
     <MESSAGE value="2024-07-24" />
     <MESSAGE value="2024-07-24&#10;+ IP 따기" />
     <MESSAGE value="2024-07-24&#10;+ IP 따기 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-24&#10;+ IP 따기 1" />
+    <MESSAGE value="2024-07-27 - Copyright &amp; License" />
+    <MESSAGE value="2024-07-27" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-27" />
   </component>
 </project>
