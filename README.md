@@ -10,40 +10,33 @@ All content in this repository (text, images, code, etc.) is protected by copyri
 
 ### Textual Content / 텍스트 콘텐츠
 
-All textual content is protected by copyright.
-
+All textual content is protected by copyright.  
 모든 텍스트 콘텐츠는 저작권 보호를 받습니다.
 
 ### Code and Scripts / 코드 및 스크립트
 
-Code and scripts used to build the website are protected by copyright.
-
+Code and scripts used to build the website are protected by copyright.  
 웹사이트를 구축하는 데 사용된 코드와 스크립트도 저작권 보호를 받습니다.
 
 ### Design and Layout / 디자인 및 레이아웃
 
-The design and layout of the website may also be protected by copyright.
-
+The design and layout of the website may also be protected by copyright.  
 웹사이트의 디자인과 레이아웃도 저작권 보호를 받을 수 있습니다.
 
 ## License / 라이선스
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. For more details, see the [`LICENSE`](LICENSE.md) file.
-
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. For more details, see the [`LICENSE`](LICENSE.md) file.  
 이 프로젝트는 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License에 따라 라이선스가 부여됩니다. 자세한 내용은 [`LICENSE`](LICENSE.md) 파일을 참조하십시오.
 
 ### License Notice / 라이선스 고지
 
-Copyright (c) 2024 Taeyoon Kim. All Rights Reserved.
-
-This file is part of this project and is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-
+Copyright (c) 2024 Taeyoon Kim. All Rights Reserved.  
 이 파일은 본 프로젝트의 일부분이며 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License에 따라 라이선스가 부여됩니다.
 
 **License Summary / 라이선스 요약**
 
 1. **No Commercial Use**  
-   This code may not be used for commercial purposes. It may only be used for non-commercial or personal purposes.  
+   This code may only be used for non-commercial or personal purposes.  
    이 소스코드는 상업적 목적으로 사용할 수 없습니다. 비영리적 또는 개인적인 용도로만 사용해야 합니다.
 
 2. **No Derivatives**  

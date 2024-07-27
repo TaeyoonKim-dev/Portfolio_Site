@@ -5,13 +5,13 @@ Copyright (c) 2024 Taeyoon Kim
 This website source code is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. The following conditions apply:
 
 1. **No Commercial Use**:
-    - The source code may not be used for commercial purposes. It may only be used for non-commercial or personal purposes.
+   - The source code may not be used for commercial purposes. It may only be used for non-commercial or personal purposes.
 
 2. **No Derivatives**:
-    - The source code may not be modified or adapted. It must remain in its original form and cannot be used to create derivative works.
+   - The source code may not be modified or adapted. It must remain in its original form and cannot be used to create derivative works.
 
 3. **Attribution**:
-    - When redistributing or using the source code, you must include the copyright notice and this license.
+   - When redistributing or using the source code, you must include the copyright notice and this license.
 
 You must comply with these license conditions, and any violation may result in legal action.
 
@@ -24,13 +24,13 @@ Copyright (c) 2024 Taeyoon Kim
 이 웹사이트 소스코드는 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License의 조건에 따라 라이선스가 부여됩니다. 다음 조건이 적용됩니다:
 
 1. **상업적 사용 금지**:
-    - 이 소스코드는 상업적 목적으로 사용할 수 없습니다. 비영리적 또는 개인적인 용도로만 사용해야 합니다.
+   - 이 소스코드는 상업적 목적으로 사용할 수 없습니다. 비영리적 또는 개인적인 용도로만 사용해야 합니다.
 
 2. **변경 금지**:
-    - 소스코드를 수정하거나 변형할 수 없습니다. 원본 상태로 유지해야 하며, 파생 작업을 생성할 수 없습니다.
+   - 소스코드를 수정하거나 변형할 수 없습니다. 원본 상태로 유지해야 하며, 파생 작업을 생성할 수 없습니다.
 
 3. **저작자 표시**:
-    - 소스코드를 배포하거나 사용하는 경우, 저작권 고지와 이 라이선스 고지를 포함해야 합니다.
+   - 소스코드를 배포하거나 사용하는 경우, 저작권 고지와 이 라이선스 고지를 포함해야 합니다.
 
 이 라이선스의 조건을 준수해야 하며, 위의 조건을 위반할 경우 법적 조치를 취할 수 있습니다.
 
