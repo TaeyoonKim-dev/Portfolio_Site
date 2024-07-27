@@ -3,92 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Portfolio Site</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/6wgS8Sk/favicon.png">
+    <link rel="icon" type="image/png" href="/Photo/favicon.png">
 </head>
 <body>
 <div class="container">
-    <div class="header">
+    <header class="header">
         <h1><a href="#">Made By Taeyoon</a></h1>
-        <div class="nav">
+        <nav class="nav">
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
             <ul>
-                <li><a href="https://www.github.com/Betrayal0526" target="_blank">Github</a></li>
+                <li><a href="https://github.com/TaeyoonKim-dev/" target="_blank">Github</a></li>
                 <li><a href="https://www.instagram.com/taeyoon_0526" target="_blank">Instagram</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </div>
-    <div class="hero">
+        </nav>
+    </header>
+    <section class="hero">
         <h2>Welcome to Taeyoon's Website</h2>
         <p>Explore my projects, understand my skills, and get in touch.</p>
         <a href="/Source_code/typing.html" target="_blank">
             <button>Visit Website</button>
         </a>
-    </div>
+    </section>
 </div>
 
-<section id="home" class="home section">
+<section id="home" class="section">
     <h2>Welcome to Taeyoon's Website</h2>
     <p>Explore the world of web development!</p>
     <a href="#about" class="button">Learn More About Me</a>
 </section>
 
-<section id="about" class="about section">
+<section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hello, I'm Taeyoon Kim, a first-year middle school student with a passion for web development.<br>Currently based in Korea, I'm determined to become a skilled developer.<br>I love exploring web development and creating exciting projects.<br>Stay tuned to discover more about my work and interests!</p>
+    <p>Hello, I'm Taeyoon Kim, a first-year middle school student with a passion for web development. Currently based in Korea, I'm determined to become a skilled developer. I love exploring web development and creating exciting projects. Stay tuned to discover more about my work and interests!</p>
     <a href="#" class="button">Learn More</a>
 </section>
 
-<section id="experience" class="experience section">
+<section id="experience" class="section">
     <h2>Experience & Skills</h2>
-    <p>Here are some of the skills and experiences I've gained in web development:<br><xuuli>NULL</xuuli></p>
+    <p>Here are some of the skills and experiences I've gained in web development:</p>
     <ul>
-        <!--        <li>HTML, CSS, JavaScript</li>-->
-        <!--        <li>React, Vue.js</li>-->
-        <!--        <li>Node.js, Express</li>-->
-        <!--        <li>Git, GitHub</li>-->
+        <!-- Skills List -->
     </ul>
 </section>
 
-<section id="projects" class="projects section">
+<section id="projects" class="section">
     <h2>Projects</h2>
     <p>Check out some of my latest projects.</p>
     <div class="project-cards">
-        <div class="project-card">
-            <a href="#" class="button">Project 1</a>
-        </div>
-        <div class="project-card">
-            <a href="#" class="button">Project 2</a>
-        </div>
-        <div class="project-card">
-            <a href="#" class="button">Project 3</a>
-        </div>
+        <div class="project-card"><a href="#" class="button">Project 1</a></div>
+        <div class="project-card"><a href="#" class="button">Project 2</a></div>
+        <div class="project-card"><a href="#" class="button">Project 3</a></div>
     </div>
 </section>
 
-<section id="contact" class="contact section">
+<section id="contact" class="section">
     <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" style="color: #4CAF50;">taeyoonkim.business@gmail.com</a>.</p>
+    <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" class="email-link">taeyoonkim.business@gmail.com</a>.</p>
     <a href="#" class="button">Contact Form</a>
 </section>
 
 <footer class="footer">
     <p>&copy; 2024 Taeyoon Kim. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <div class="license">
+        <p>
+            <a href="https://github.com/TaeyoonKim-dev/repository" class="license-link" target="_blank" rel="noopener noreferrer">Github Portfolio</a> by
+            <a href="https://www.instagram.com/taeyoon_0526" class="license-link" target="_blank" rel="noopener noreferrer">Taeyoon Kim</a> is licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="license-link" target="_blank" rel="license noopener noreferrer">CC BY-NC-ND 4.0</a>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="cc-icon">
+        </p>
     </div>
 </footer>
 
-<!-- 로딩 스피너 -->
 <div class="loading-screen">
     <div class="loading-spinner"></div>
 </div>

@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-@font-face {
-    font-family: 'Abster';
-    src: url('../Font/font/abster-webfont.woff2') format('woff2'),
-    url('../Font/font/abster-webfont.woff') format('woff');
+:root {
+    --main-bg-color: rgba(0, 0, 0, 0.8);
+    --main-color: #1fdfdf;
+    --button-bg-color: rebeccapurple;
+    --button-hover-color: #9400D3;
+    --text-color: #fff;
+    --border-color: rgba(255, 255, 255, 0.3);
+    --spinner-color: #FF5733;
+    --spinner-animation-speed: 1s;
 }
 
 * {
@@ -14,15 +19,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://i.ibb.co/ydK3TDZ/Main.png') no-repeat center center fixed;
+    background: linear-gradient(var(--main-bg-color), var(--main-bg-color)), url('https://i.ibb.co/ydK3TDZ/Main.png') no-repeat center center fixed;
     background-size: cover;
-    color: white;
+    color: var(--text-color);
     overflow-x: hidden;
     position: relative;
 }
 
 body.body-loading {
-    overflow: hidden; /* 로딩 스크린이 보이는 동안 스크롤 비활성화 */
+    overflow: hidden;
 }
 
 .container {
@@ -43,7 +48,7 @@ body.body-loading {
 
 .header h1 a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-family: 'Abster', sans-serif;
     font-size: 2rem;
 }
@@ -69,13 +74,13 @@ body.body-loading {
 
 .nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 .nav ul li a:hover {
-    color: #1fdfdf;
+    color: var(--main-color);
 }
 
 .hero {
@@ -102,8 +107,8 @@ body.body-loading {
 .hero button {
     font-size: 1rem;
     background: none;
-    border: 2px solid rebeccapurple;
-    color: white;
+    border: 2px solid var(--button-bg-color);
+    color: var(--text-color);
     padding: 15px 30px;
     border-radius: 20px;
     margin-top: 30px;
@@ -113,17 +118,17 @@ body.body-loading {
 }
 
 .hero button:hover {
-    border-color: #9400D3;
-    box-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3, 0 0 30px #9400D3, 0 0 40px #9400D3;
-    color: white;
+    border-color: var(--button-hover-color);
+    box-shadow: 0 0 10px var(--button-hover-color), 0 0 20px var(--button-hover-color), 0 0 30px var(--button-hover-color), 0 0 40px var(--button-hover-color);
+    color: var(--text-color);
     transform: scale(1.15);
 }
 
-section {
+.section {
     width: 90%;
     margin: 50px auto;
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
     background: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
@@ -133,28 +138,28 @@ section {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-section.animate {
+.section.animate {
     opacity: 1;
     transform: translateY(0);
 }
 
-section h2 {
+.section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #1fdfdf;
+    color: var(--main-color);
 }
 
-section p {
+.section p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
 
-section a.button {
+.button {
     display: inline-block;
     font-size: 1rem;
-    background: rebeccapurple;
-    border: 2px solid rebeccapurple;
-    color: white;
+    background: var(--button-bg-color);
+    border: 2px solid var(--button-bg-color);
+    color: var(--text-color);
     padding: 10px 20px;
     border-radius: 20px;
     margin: 10px 5px;
@@ -162,77 +167,63 @@ section a.button {
     transition: all 0.3s;
 }
 
-section a.button:hover {
-    background: #9400D3;
-    border-color: #9400D3;
+.button:hover {
+    background: var(--button-hover-color);
+    border-color: var(--button-hover-color);
     transform: scale(1.1);
 }
 
-#about h2,
-#projects h2,
-#contact h2 {
-    color: #1fdfdf;
-}
-
-#about p,
-#projects p,
-#contact p,
-.nav ul li a {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#about a.button,
-#projects a.button,
-#contact a.button {
-    color: white;
-}
-
-#about a.button:hover,
-#projects a.button:hover,
-#contact a.button:hover {
-    background: #9400D3;
-    border-color: #9400D3;
-    transform: scale(1.1);
-}
-
-.contact p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.contact a.button:hover {
-    background: #9400D3;
-    border-color: #9400D3;
-    transform: scale(1.1);
+.email-link {
+    color: #4CAF50;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 10px 0;
+    color: var(--text-color);
     z-index: 1000;
-    transition: background-color 1s ease;
+    position: fixed; /* 변경된 부분 */
+    bottom: 0; /* 변경된 부분 */
+    width: 100%; /* 변경된 부분 */
 }
 
 .footer-links {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
-    color: #1fdfdf;
+    color: var(--main-color);
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #9400D3;
+    color: var(--button-hover-color);
+}
+
+.license {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.license a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.license a:hover {
+    text-decoration: underline;
+}
+
+.license img.cc-icon {
+    height: 22px;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 .loading-screen {
@@ -254,50 +245,26 @@ section a.button:hover {
 .loading-screen.hidden {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease, visibility 1s ease;
 }
 
 .loading-spinner {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.3);
-    border-top: 8px solid #FF5733;
-    animation: spin 1s linear infinite, changeColor 3s linear infinite;
+    border: 8px solid var(--border-color);
+    border-top: 8px solid var(--spinner-color);
+    animation: spin var(--spinner-animation-speed) linear infinite, changeColor 3s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @keyframes changeColor {
-    0% {
-        border-top-color: #FF5733;
-    }
-    12.5% {
-        border-top-color: #FFC300;
-    }
-    25% {
-        border-top-color: #FF5733;
-    }
-    37.5% {
-        border-top-color: #4CAF50;
-    }
-    50% {
-        border-top-color: #3498DB;
-    }
-    62.5% {
-        border-top-color: #9B59B6;
-    }
-    75% {
-        border-top-color: #FF5733;
-    }
-    100% {
-        border-top-color: #FF5733;
-    }
+    0%, 100% { border-top-color: var(--spinner-color); }
+    12.5% { border-top-color: #FFC300; }
+    37.5% { border-top-color: #4CAF50; }
+    50% { border-top-color: #3498DB; }
+    62.5% { border-top-color: #9B59B6; }
 }
