@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-24&#10;+ IP 따기">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-27">
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,10 @@
       <updated>1721616995142</updated>
       <workItem from="1721616997403" duration="3672000" />
       <workItem from="1721620884469" duration="2312000" />
-      <workItem from="1721794936630" duration="2447000" />
+      <workItem from="1721794936630" duration="3130000" />
+      <workItem from="1721883292044" duration="49000" />
+      <workItem from="1722060466693" duration="1816000" />
+      <workItem from="1722062802622" duration="196000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -184,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721797343940</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2024-07-24&#10;+ IP 따기 1">
+      <option name="closed" value="true" />
+      <created>1721797615836</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721797615836</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +231,7 @@
     <MESSAGE value="2024-07-22" />
     <MESSAGE value="2024-07-24" />
     <MESSAGE value="2024-07-24&#10;+ IP 따기" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-24&#10;+ IP 따기" />
+    <MESSAGE value="2024-07-24&#10;+ IP 따기 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-24&#10;+ IP 따기 1" />
   </component>
 </project>
