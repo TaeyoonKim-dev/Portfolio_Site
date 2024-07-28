@@ -173,9 +173,111 @@ body.body-loading {
     transform: scale(1.1);
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    outline: none;
+}
+
+#contact-form button {
+    font-size: 1rem;
+    background: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+#contact p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
 .email-link {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: var(--button-hover-color);
+}
+
+/* 로딩 애니메이션 */
+#contact-form button.loading {
+    position: relative;
+    padding-right: 40px;
+}
+
+#contact-form button.loading::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--text-color);
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* 에러 및 성공 메시지 */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.message.success {
     color: #4CAF50;
 }
+
+.message.error {
+    color: #FF5733;
+}
+
 
 .footer {
     background-color: rgba(0, 0, 0, 0.7);

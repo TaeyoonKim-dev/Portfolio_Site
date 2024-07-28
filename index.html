@@ -6,7 +6,7 @@
     <title>Portfolio Site</title>
     <link rel="stylesheet" href="Source_code/style.css">
     <script src="Source_code/main.js" defer></script>
-    <link rel="icon" type="image/png" href="/Photo/favicon.png">
+    <link rel="icon" type="image/png" href="Photo/favicon.png">
 </head>
 <body>
 <div class="container">
@@ -66,7 +66,15 @@
 <section id="contact" class="section">
     <h2>Contact</h2>
     <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" class="email-link">taeyoonkim.business@gmail.com</a>.</p>
-    <a href="#" class="button">Contact Form</a>
+    <form id="contact-form" action="/contact" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer class="footer">
@@ -87,9 +95,5 @@
 <div class="loading-screen">
     <div class="loading-spinner"></div>
 </div>
-
-<div id="ip-address"></div>
-<div id="user-agent"></div>
-<div id="timestamp"></div>
 </body>
 </html>
