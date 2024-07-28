@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             loadingScreen.style.display = 'none'; // 로딩 스크린을 완전히 숨김
             document.body.classList.remove('body-loading'); // 스크롤 잠금 해제
         }, 1000); // 1초 후에 완전히 숨김
-    }, 1500); // 1.5초 후에 로딩 스크린 서서히 사라지기 시작
+    }, 500); // 0.5초 후에 로딩 스크린 서서히 사라지기 시작
 
     // Smooth scrolling to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
