@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', highlightCurrentSection);
     highlightCurrentSection(); // 초기 호출로 현재 위치 표시
 
-    // 사용자 IP를 Flask 서버로 전송
+    // 사용자 IP를 서버로 전송
     fetch('/log_ip', {
         method: 'POST'
     })

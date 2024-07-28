@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-28">
+      <change afterPath="$PROJECT_DIR$/Source_code/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source_code/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ips.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Portfolio_Site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Portfolio_Site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_code/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Source_code/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -55,22 +69,25 @@
     "JavaScript 디버그.index.html.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/iamta/OneDrive/Portfolio_Site",
+    "javascript.nodejs.core.library.configured.version": "20.15.1",
+    "javascript.nodejs.core.library.typings.version": "20.14.13",
+    "last_opened_file_path": "C:/Program Files/nodejs/node.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Program Files/nodejs/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\Source_code" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site" />
       <recent name="C:\Users\iamta\OneDrive\Website\Introduction\Source_code" />
       <recent name="C:\Users\iamta\OneDrive\Website\Introduction" />
       <recent name="C:\Users\iamta\OneDrive\Website\Introduction\static" />
-      <recent name="C:\Users\iamta\OneDrive\Website\Introduction\templates" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -113,7 +130,7 @@
       <workItem from="1722070720170" duration="65000" />
       <workItem from="1722070806128" duration="108000" />
       <workItem from="1722070944250" duration="1727000" />
-      <workItem from="1722164916860" duration="267000" />
+      <workItem from="1722164916860" duration="2577000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -307,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722165107175</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2024-07-28">
+      <option name="closed" value="true" />
+      <created>1722165252991</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722165252991</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
