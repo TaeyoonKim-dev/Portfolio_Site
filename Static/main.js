@@ -144,31 +144,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 messageContainer.style.display = 'block';
             });
     });
-    document.addEventListener("DOMContentLoaded", function () {
-        const contactForm = document.getElementById('contact-form');
-
-        contactForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
-
-            const formData = new FormData(contactForm);
-            const formObject = Object.fromEntries(formData.entries());
-
-            try {
-                const response = await fetch('/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formObject)
-                });
-
-                const result = await response.text();
-                alert(result);
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                alert('Error sending email');
-            }
-        });
-    });
 });
-

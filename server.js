@@ -1,15 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-require('path');
 require('dotenv').config();
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.mail.me.com',
@@ -33,10 +33,10 @@ app.post('/contact', (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email:', error);
-            return res.status(500).send('Error sending email');
+            return res.status(500).send({ success: false, message: 'Error sending email' });
         }
         console.log('Email sent:', info.response);
-        res.status(200).send('Email sent successfully');
+        res.status(200).send({ success: true, message: 'Email sent successfully' });
     });
 });
 
