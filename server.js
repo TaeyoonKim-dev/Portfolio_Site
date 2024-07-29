@@ -1,45 +1,60 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
+// SQLite 데이터베이스 파일 경로
+const dbPath = path.resolve(__dirname, 'database.db');
+const db = new sqlite3.Database(dbPath);
+
+// JSON 요청 본문을 파싱할 미들웨어
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.mail.me.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    }
+// 정적 파일 제공
+app.use(express.static(__dirname));
+
+// 데이터베이스 초기화
+db.serialize(() => {
+    db.run(`
+        CREATE TABLE IF NOT EXISTS contact_messages (
+                                                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                                        name TEXT NOT NULL,
+                                                        email TEXT NOT NULL,
+                                                        message TEXT NOT NULL
+        )
+    `);
 });
 
+// 루트 라우트
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// 연락처 폼 데이터 처리
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
-    const mailOptions = {
-        from: process.env.EMAIL_USER,
-        to: process.env.EMAIL_USER,
-        subject: `Contact Form Submission from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-    };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error('Error sending email:', error);
-            return res.status(500).send({ success: false, message: 'Error sending email' });
+    if (!name || !email || !message) {
+        return res.status(400).json({ success: false, message: 'All fields are required.' });
+    }
+
+    const stmt = db.prepare("INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)");
+    stmt.run(name, email, message, function(err) {
+        if (err) {
+            console.error('Error saving message:', err.message);
+            res.status(500).json({ success: false, message: 'Error saving message. Please try again.' });
+        } else {
+            res.json({ success: true });
         }
-        console.log('Email sent:', info.response);
-        res.status(200).send({ success: true, message: 'Email sent successfully' });
     });
+    stmt.finalize();
 });
 
+// 서버 시작
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server running on http://localhost:${port}`);
 });

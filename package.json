@@ -10,7 +10,9 @@
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.14"
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.14",
+    "sqlite3": "^5.1.7"
   },
   "author": "Taeyoon Kim",
   "license": "CC BY-NC-ND 4.0"

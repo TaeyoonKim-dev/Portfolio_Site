@@ -107,11 +107,15 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', highlightCurrentSection);
     highlightCurrentSection(); // 초기 호출로 현재 위치 표시
 
+    // Contact form submission
     const contactForm = document.getElementById('contact-form');
     const submitButton = contactForm.querySelector('button');
-    const messageContainer = document.createElement('div');
-    messageContainer.className = 'message';
-    contactForm.appendChild(messageContainer);
+    const messageContainer = document.querySelector('.message');
+
+    if (!messageContainer) {
+        console.error('Message container 요소를 찾을 수 없습니다.');
+        return;
+    }
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -136,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 messageContainer.style.display = 'block';
             })
-            .catch(error => {  // `error` 매개변수를 사용
+            .catch(error => {
                 console.error('Error sending message:', error);
                 submitButton.classList.remove('loading');
                 messageContainer.textContent = 'Error sending message. Please try again.';
