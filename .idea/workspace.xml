@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-28 - node.js">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-28">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_code/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Source_code/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_code/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Source_code/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +127,8 @@
       <workItem from="1722070806128" duration="108000" />
       <workItem from="1722070944250" duration="1727000" />
       <workItem from="1722164916860" duration="5473000" />
-      <workItem from="1722170488725" duration="443000" />
+      <workItem from="1722170488725" duration="733000" />
+      <workItem from="1722224491187" duration="1352000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -381,8 +376,8 @@
     <MESSAGE value="2024-07-24&#10;+ IP 따기 1" />
     <MESSAGE value="2024-07-27 - Copyright &amp; License" />
     <MESSAGE value="2024-07-27" />
-    <MESSAGE value="2024-07-28" />
     <MESSAGE value="2024-07-28 - node.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-28 - node.js" />
+    <MESSAGE value="2024-07-28" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-28" />
   </component>
 </project>
