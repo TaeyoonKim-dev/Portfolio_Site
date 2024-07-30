@@ -2,4 +2,4 @@
 
 /.well-known
 
-database.db
+database/database.db

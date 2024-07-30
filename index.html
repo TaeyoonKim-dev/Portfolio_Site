@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site</title>
-    <link rel="stylesheet" href="/Static/style.css">
-    <script src="/Static/main.js" defer></script>
-    <link rel="icon" type="image/png" href="/Photo/favicon.png">
+    <link rel="stylesheet" href="/public/Stylesheet/style.css">
+    <script src="/public/Javascript/main.js" defer></script>
+    <link rel="icon" type="image/png" href="/assets/Photo/favicon.png">
 </head>
 <body>
 <div class="container">
     <header class="header">
         <h1><a href="#">Made By Taeyoon</a></h1>
-        <nav class="nav">
+        <nav class="nav" aria-label="Main Navigation">
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
             <ul>
@@ -66,14 +66,15 @@
 <section id="contact" class="section">
     <h2>Contact</h2>
     <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" class="email-link">taeyoonkim.business@gmail.com</a>.</p>
-    <form id="contact-form" action="/contact" method="POST">
+    <form id="contact-form" action="/contact" method="POST" autocomplete="off">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="text" id="name" name="name" required autocomplete="off">
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email" autocomplete="off">
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required autocomplete="off"></textarea>
         <button type="submit">Send Message</button>
+        <span class="loading-message"></span>
     </form>
 </section>
 
@@ -95,5 +96,6 @@
 <div class="loading-screen">
     <div class="loading-spinner"></div>
 </div>
+
 </body>
 </html>

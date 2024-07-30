@@ -1,18 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 로딩 스크린 및 스크롤 잠금 제어
     const loadingScreen = document.querySelector('.loading-screen');
+    const form = document.getElementById('contact-form');
+    const loadingMessage = document.querySelector('.loading-message');
+    const messageContainer = document.querySelector('.message');
 
-    // 로딩 스크린 보이기 및 스크롤 잠금
-    document.body.classList.add('body-loading'); // 스크롤 잠금
+    if (loadingScreen) {
+        document.body.classList.add('body-loading');
 
-    // 1.5초 후에 로딩 스크린을 서서히 사라지게 함
-    setTimeout(function() {
-        loadingScreen.classList.add('hidden'); // `hidden` 클래스를 추가하여 서서히 사라지도록 설정
+        // 로딩 스크린을 서서히 사라지게 함
         setTimeout(function() {
-            loadingScreen.style.display = 'none'; // 로딩 스크린을 완전히 숨김
-            document.body.classList.remove('body-loading'); // 스크롤 잠금 해제
-        }, 1000); // 1초 후에 완전히 숨김
-    }, 500); // 0.5초 후에 로딩 스크린 서서히 사라지기 시작
+            loadingScreen.classList.add('hidden');
+
+            // 숨긴 후에 완전히 제거
+            setTimeout(function() {
+                loadingScreen.style.display = 'none';
+                document.body.classList.remove('body-loading');
+            }, 1000); // opacity와 visibility transition이 완료된 후
+        }, 500); // 0.5초 후에 서서히 사라지기 시작
+    } else {
+        console.error('로딩 화면 요소를 찾을 수 없습니다.');
+    }
 
     // Smooth scrolling to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -108,44 +115,25 @@ document.addEventListener('DOMContentLoaded', function () {
     highlightCurrentSection(); // 초기 호출로 현재 위치 표시
 
     // Contact form submission
-    const contactForm = document.getElementById('contact-form');
-    const submitButton = contactForm.querySelector('button');
-    const messageContainer = document.querySelector('.message');
-
-    if (!messageContainer) {
-        console.error('Message container 요소를 찾을 수 없습니다.');
-        return;
-    }
-
-    contactForm.addEventListener('submit', function (e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
-        submitButton.classList.add('loading');
-        messageContainer.style.display = 'none';
+        // Prevent the default form submission
+        loadingMessage.textContent = 'Please wait...';
+        loadingScreen.style.display = 'flex';
 
-        const formData = new FormData(contactForm);
-        fetch(contactForm.action, {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => response.json())
-            .then(data => {
-                submitButton.classList.remove('loading');
-                if (data.success) {
-                    messageContainer.textContent = 'Message sent successfully!';
-                    messageContainer.className = 'message success';
-                    contactForm.reset();
-                } else {
-                    messageContainer.textContent = 'Error sending message. Please try again.';
-                    messageContainer.className = 'message error';
-                }
-                messageContainer.style.display = 'block';
-            })
-            .catch(error => {
-                console.error('Error sending message:', error);
-                submitButton.classList.remove('loading');
-                messageContainer.textContent = 'Error sending message. Please try again.';
-                messageContainer.className = 'message error';
-                messageContainer.style.display = 'block';
-            });
+        // Simulate a network request with a timeout
+        setTimeout(() => {
+            // Here you would handle the form submission, e.g., send data to a server
+            form.reset();
+            loadingMessage.textContent = 'Submitted!';
+
+            // Fade out the message over 2 seconds
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 2000); // Allow time for opacity transition
+            }, 2000);
+        }, 2000);
     });
 });

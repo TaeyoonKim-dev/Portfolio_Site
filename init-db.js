@@ -1,25 +1,12 @@
-const sqlite3 = require('sqlite3').verbose();
-const path = require('path');
-
-// SQLite 데이터베이스 파일 경로
-const dbPath = path.resolve(__dirname, 'database.db');
-const db = new sqlite3.Database(dbPath);
+import { supabase } from './supabaseClient.js'; // Supabase 클라이언트 가져오기
 
 // 데이터베이스 초기화
-db.serialize(() => {
-    db.run(`
-        CREATE TABLE IF NOT EXISTS contact_messages (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            email TEXT NOT NULL,
-            message TEXT NOT NULL
-        )
-    `, (err) => {
-        if (err) {
-            console.error('Error initializing database:', err.message);
-        } else {
-            console.log('Database initialized successfully.');
-        }
-        db.close();
-    });
+async function initializeDatabase() {
+    // 데이터베이스 구조는 Supabase 대시보드에서 미리 설정해야 합니다.
+    console.log('Database initialization is complete if the table already exists.');
+}
+
+// 데이터베이스 초기화 호출
+initializeDatabase().catch(error => {
+    console.error('Error during database initialization:', error.message);
 });

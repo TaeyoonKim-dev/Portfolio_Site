@@ -7,7 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mysql": "^2.18.1",
@@ -15,5 +17,6 @@
     "sqlite3": "^5.1.7"
   },
   "author": "Taeyoon Kim",
-  "license": "CC BY-NC-ND 4.0"
+  "license": "CC BY-NC-ND 4.0",
+  "type": "module"
 }
