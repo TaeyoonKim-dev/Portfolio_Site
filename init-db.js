@@ -1,4 +1,4 @@
-// import { supabase } from './supabaseClient.js'; // Supabase 클라이언트 가져오기
+// import { supabase } from './supabaseClient.mjs'; // Supabase 클라이언트 가져오기
 
 // 데이터베이스 초기화
 async function initializeDatabase() {

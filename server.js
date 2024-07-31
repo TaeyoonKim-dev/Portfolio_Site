@@ -1,5 +1,5 @@
 import express from 'express';
-import { supabase } from './functions/supabaseClient.js'; // Supabase 클라이언트 가져오기
+import { supabase } from './functions/supabaseClient.mjs'; // Supabase 클라이언트 가져오기
 import bodyParser from 'body-parser';
 import path from 'path';
 import cors from 'cors'; // CORS 패키지 임포트

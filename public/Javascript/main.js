@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setTimeout(function() {
             loadingScreen.classList.add('hidden');
+
             setTimeout(function() {
                 loadingScreen.style.display = 'none';
                 document.body.classList.remove('body-loading');
-            }, 1000); // opacity와 visibility transition이 완료된 후
-        }, 500); // 0.5초 후에 서서히 사라지기 시작
+            }, 1000);
+        }, 500);
     } else {
         console.error('로딩 화면 요소를 찾을 수 없습니다.');
     }
 
-    // Smooth scrolling to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Toggle active class in navigation menu based on scroll position
     const navLinks = document.querySelectorAll('.nav ul li a');
     const sections = document.querySelectorAll('section');
 
@@ -55,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Intersection Observer for section animations
     const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -70,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
         sectionObserver.observe(section);
     });
 
-    // JavaScript for footer opacity and hover effect
     const footer = document.querySelector('.footer');
 
     if (footer) {
@@ -89,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Footer 요소를 찾을 수 없습니다.');
     }
 
-    // 섹션 간 이동 시 현재 위치 표시
     const highlightCurrentSection = () => {
         const scrollPosition = window.scrollY + window.innerHeight / 2;
 
@@ -106,26 +102,22 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     window.addEventListener('scroll', highlightCurrentSection);
-    highlightCurrentSection(); // 초기 호출로 현재 위치 표시
+    highlightCurrentSection();
 
-    // Contact form submission
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         loadingMessage.textContent = 'Please wait...';
         loadingScreen.style.display = 'flex';
 
-        // Simulate a network request with a timeout
         setTimeout(() => {
-            // Here you would handle the form submission, e.g., send data to a server
             form.reset();
             loadingMessage.textContent = 'Submitted!';
 
-            // Fade out the message over 2 seconds
             setTimeout(() => {
                 loadingScreen.style.opacity = '0';
                 setTimeout(() => {
                     loadingScreen.style.display = 'none';
-                }, 2000); // Allow time for opacity transition
+                }, 2000);
             }, 2000);
         }, 2000);
     });

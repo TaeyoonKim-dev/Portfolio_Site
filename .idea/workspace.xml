@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-31 - Refactor JavaScript for improved functionality" />
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-31 - Refactor JavaScript for improved functionality">
+      <change afterPath="$PROJECT_DIR$/functions/supabaseClient.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/contact-form-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/contact-form-handler.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/supabaseClient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init-db.js" beforeDir="false" afterPath="$PROJECT_DIR$/init-db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typing.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typing.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +70,7 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JavaScript 디버그.index.html.executor": "Debug",
+    "Node.js.contact-form-handler.cjs.executor": "Run",
     "Node.js.contact-form-handler.js.executor": "Run",
     "Node.js.supabaseClient.js.executor": "Run",
     "Node.js.test-env.js.executor": "Run",
@@ -78,18 +90,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\functions" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\assets" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public\Stylesheat" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public\Javascript" />
-      <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.contact-form-handler.js">
-    <configuration name="contact-form-handler.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/contact-form-handler.js" working-dir="$PROJECT_DIR$/functions">
+  <component name="RunManager" selected="Node.js.contact-form-handler.mjs">
+    <configuration name="contact-form-handler.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/contact-form-handler.mjs" working-dir="$PROJECT_DIR$/functions">
       <method v="2" />
     </configuration>
-    <configuration name="supabaseClient.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/supabaseClient.js" working-dir="$PROJECT_DIR$/functions">
+    <configuration name="supabaseClient.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/supabaseClient.mjs" working-dir="$PROJECT_DIR$/functions">
       <method v="2" />
     </configuration>
     <configuration name="test-env.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test-env.js" working-dir="$PROJECT_DIR$">
@@ -97,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.contact-form-handler.js" />
+        <item itemvalue="Node.js.contact-form-handler.mjs" />
         <item itemvalue="Node.js.test-env.js" />
-        <item itemvalue="Node.js.supabaseClient.js" />
+        <item itemvalue="Node.js.supabaseClient.mjs" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +161,7 @@
       <workItem from="1722230899904" duration="541000" />
       <workItem from="1722231641431" duration="114000" />
       <workItem from="1722338028377" duration="5857000" />
-      <workItem from="1722389532684" duration="4564000" />
+      <workItem from="1722389532684" duration="6082000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -439,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722394065037</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="2024-07-31 - Refactor JavaScript for improved functionality">
+      <option name="closed" value="true" />
+      <created>1722394349993</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1722394349993</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

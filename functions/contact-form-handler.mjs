@@ -1,12 +1,19 @@
-import { supabase } from './supabaseClient.js';
+import { supabase } from './supabaseClient.mjs';
 
-export const handler = async (event) => {
+export async function handler(event) {
     try {
         const { name, email, message } = JSON.parse(event.body);
 
+        if (!message) {
+            return {
+                statusCode: 400,
+                body: JSON.stringify({ error: 'Message is required.' }),
+            };
+        }
+
         const { error } = await supabase
-            .from('contacts')
-            .insert([{ name, email, message }]);
+            .from('contact_messages')
+            .insert([{ name: name || null, email: email || null, message }]);
 
         if (error) {
             console.error('Error inserting data:', error);
@@ -27,4 +34,4 @@ export const handler = async (event) => {
             body: JSON.stringify({ error: 'Internal Server Error' }),
         };
     }
-};
+}
