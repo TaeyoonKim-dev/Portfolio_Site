@@ -1,19 +1,21 @@
-import { supabase } from './supabaseClient.mjs';
+import { createClient } from '@supabase/supabase-js';
+import { config } from 'dotenv';
 
-export async function handler(event) {
+config();  // .env 파일의 환경 변수를 로드합니다.
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+export const handler = async (event) => {
     try {
         const { name, email, message } = JSON.parse(event.body);
 
-        if (!message) {
-            return {
-                statusCode: 400,
-                body: JSON.stringify({ error: 'Message is required.' }),
-            };
-        }
-
-        const { error } = await supabase
-            .from('contact_messages')
-            .insert([{ name: name || null, email: email || null, message }]);
+        // 데이터베이스에 삽입
+        const {error } = await supabase
+            .from('contact_form')
+            .insert([{ name, email, message }]);
 
         if (error) {
             console.error('Error inserting data:', error);
@@ -25,13 +27,13 @@ export async function handler(event) {
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ success: true, message: 'Message sent successfully!' }),
+            body: JSON.stringify({ message: 'Message received successfully!' }),
         };
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error handling request:', error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Internal Server Error' }),
+            body: JSON.stringify({ error: 'An error occurred while processing your request.' }),
         };
     }
-}
+};
