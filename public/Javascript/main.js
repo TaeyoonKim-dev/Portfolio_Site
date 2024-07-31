@@ -2,16 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const loadingScreen = document.querySelector('.loading-screen');
     const form = document.getElementById('contact-form');
     const loadingMessage = document.querySelector('.loading-message');
-    // const messageContainer = document.querySelector('.message');
 
     if (loadingScreen) {
         document.body.classList.add('body-loading');
 
-        // 로딩 스크린을 서서히 사라지게 함
         setTimeout(function() {
             loadingScreen.classList.add('hidden');
-
-            // 숨긴 후에 완전히 제거
             setTimeout(function() {
                 loadingScreen.style.display = 'none';
                 document.body.classList.remove('body-loading');
@@ -34,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav ul li a');
     const sections = document.querySelectorAll('section');
 
-    // 디바운스 함수 (스크롤 이벤트 최적화)
     function debounce(func, wait) {
         let timeout;
         return function() {
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
-    // 스크롤 이벤트 핸들러
     const handleScroll = debounce(() => {
         const scrollPosition = window.scrollY + 150;
 
@@ -57,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
-    }, 100); // 100ms 디바운스
+    }, 100);
 
     window.addEventListener('scroll', handleScroll);
 
@@ -70,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 entry.target.classList.remove('animate');
             }
         });
-    }, { threshold: [0.25, 0.5, 0.75] }); // 다양한 임계값 설정
+    }, { threshold: [0.25, 0.5, 0.75] });
 
     sections.forEach(section => {
         sectionObserver.observe(section);
@@ -117,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Contact form submission
     form.addEventListener('submit', function (e) {
         e.preventDefault();
-        // Prevent the default form submission
         loadingMessage.textContent = 'Please wait...';
         loadingScreen.style.display = 'flex';
 

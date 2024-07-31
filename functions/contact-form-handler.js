@@ -18,7 +18,7 @@ exports.handler = async (event) => {
             };
         }
 
-        console.log('Message inserted successfully!'); // 콘솔 로그 추가
+        console.log('Message sent successfully!'); // 콘솔에 성공 메시지 출력
 
         return {
             statusCode: 200,

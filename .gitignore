@@ -3,3 +3,7 @@
 
 # Well-known directory (e.g., for Let's Encrypt)
 /.well-known
+# Local Netlify folder
+.netlify
+# test
+test-env.js
