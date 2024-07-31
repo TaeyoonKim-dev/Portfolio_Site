@@ -1,11 +1,9 @@
-import { supabase } from './supabaseClient';
+import { supabase } from './supabaseClient.js';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
     try {
-        // 요청 본문에서 데이터 추출
         const { name, email, message } = JSON.parse(event.body);
 
-        // Supabase를 이용해 데이터베이스에 저장
         const { error } = await supabase
             .from('contacts')
             .insert([{ name, email, message }]);
@@ -17,8 +15,6 @@ exports.handler = async (event) => {
                 body: JSON.stringify({ error: 'Error inserting data into the database.' }),
             };
         }
-
-        console.log('Message sent successfully!'); // 콘솔에 성공 메시지 출력
 
         return {
             statusCode: 200,

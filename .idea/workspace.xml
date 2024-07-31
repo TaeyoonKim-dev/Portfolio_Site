@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-30 - Deploy to Netlify">
-      <change afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/contact-form-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/contact-form-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/supabaseClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/supabaseClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
-    </list>
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-31 - Refactor JavaScript for improved functionality" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +149,7 @@
       <workItem from="1722230899904" duration="541000" />
       <workItem from="1722231641431" duration="114000" />
       <workItem from="1722338028377" duration="5857000" />
-      <workItem from="1722389532684" duration="4229000" />
+      <workItem from="1722389532684" duration="4564000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -439,7 +431,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722392281046</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2024-07-31 - Refactor JavaScript for improved functionality">
+      <option name="closed" value="true" />
+      <created>1722394065037</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1722394065037</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,6 +482,7 @@
     <MESSAGE value="2024-07-28 - SQLite" />
     <MESSAGE value="2024-07-30 - Database 수정 등" />
     <MESSAGE value="2024-07-30 - Deploy to Netlify" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-30 - Deploy to Netlify" />
+    <MESSAGE value="2024-07-31 - Refactor JavaScript for improved functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-31 - Refactor JavaScript for improved functionality" />
   </component>
 </project>
