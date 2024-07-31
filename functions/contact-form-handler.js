@@ -18,6 +18,8 @@ exports.handler = async (event) => {
             };
         }
 
+        console.log('Message inserted successfully!'); // 콘솔 로그 추가
+
         return {
             statusCode: 200,
             body: JSON.stringify({ success: true, message: 'Message sent successfully!' }),
