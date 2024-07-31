@@ -1,0 +1,8 @@
+[build]
+functions = "functions" # 함수 파일들이 위치할 디렉토리
+publish = "public" # 정적 파일들이 위치할 디렉토리
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200

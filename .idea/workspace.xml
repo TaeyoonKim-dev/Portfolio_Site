@@ -4,27 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-28 - SQLite">
-      <change afterPath="$PROJECT_DIR$/supabaseClient.js" afterDir="false" />
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-30 - Database 수정 등">
+      <change afterPath="$PROJECT_DIR$/functions/contact-form-handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/abster-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/abster-demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/abster-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/abster-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/abster-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/abster-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/generator_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/generator_config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/specimen_files/grid_12-825-55-15.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/specimen_files/grid_12-825-55-15.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/specimen_files/specimen_stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/specimen_files/specimen_stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Font/font/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Font/font/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Photo/Main.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Photo/Main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Photo/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Photo/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Stylesheet/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init-db.js" beforeDir="false" afterPath="$PROJECT_DIR$/init-db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Javascript/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabaseClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/supabaseClient.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +83,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\functions" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\assets" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public\Stylesheat" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public\Javascript" />
       <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\public" />
-      <recent name="C:\Users\iamta\OneDrive\Portfolio_Site\database" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -147,7 +135,8 @@
       <workItem from="1722224491187" duration="4324000" />
       <workItem from="1722230899904" duration="541000" />
       <workItem from="1722231641431" duration="114000" />
-      <workItem from="1722338028377" duration="5778000" />
+      <workItem from="1722338028377" duration="5857000" />
+      <workItem from="1722389532684" duration="1437000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -389,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722231742999</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2024-07-30 - Database 수정 등">
+      <option name="closed" value="true" />
+      <created>1722343914497</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722343914497</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +427,7 @@
     <MESSAGE value="2024-07-28 - node.js" />
     <MESSAGE value="2024-07-28" />
     <MESSAGE value="2024-07-28 - SQLite" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-28 - SQLite" />
+    <MESSAGE value="2024-07-30 - Database 수정 등" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-30 - Database 수정 등" />
   </component>
 </project>

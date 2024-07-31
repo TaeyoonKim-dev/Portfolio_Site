@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const loadingScreen = document.querySelector('.loading-screen');
     const form = document.getElementById('contact-form');
     const loadingMessage = document.querySelector('.loading-message');
-    const messageContainer = document.querySelector('.message');
+    // const messageContainer = document.querySelector('.message');
 
     if (loadingScreen) {
         document.body.classList.add('body-loading');
