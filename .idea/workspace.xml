@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-30 - Database 수정 등">
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-07-30 - Deploy to Netlify">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,7 @@
       <workItem from="1722230899904" duration="541000" />
       <workItem from="1722231641431" duration="114000" />
       <workItem from="1722338028377" duration="5857000" />
-      <workItem from="1722389532684" duration="1694000" />
+      <workItem from="1722389532684" duration="2082000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -379,7 +380,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722343914497</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="2024-07-30 - Deploy to Netlify">
+      <option name="closed" value="true" />
+      <created>1722391391464</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722391391464</updated>
+    </task>
+    <task id="LOCAL-00035" summary="2024-07-30 - Deploy to Netlify">
+      <option name="closed" value="true" />
+      <created>1722391518652</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722391518652</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +438,7 @@
     <MESSAGE value="2024-07-28" />
     <MESSAGE value="2024-07-28 - SQLite" />
     <MESSAGE value="2024-07-30 - Database 수정 등" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-07-30 - Database 수정 등" />
+    <MESSAGE value="2024-07-30 - Deploy to Netlify" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-07-30 - Deploy to Netlify" />
   </component>
 </project>

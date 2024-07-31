@@ -3,28 +3,3 @@
 
 # Well-known directory (e.g., for Let's Encrypt)
 /.well-known
-
-# Local database files
-database/database.db
-
-# Node.js modules
-node_modules
-
-# Log files
-*.log
-logs/
-
-# Build directories
-dist/
-build/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-
-# IDE-specific files
-.vscode/
-.idea/
-
-# Local Netlify folder
-.netlify
