@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-08-01 - Supabase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/contact-form-handler.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/functions/contact-form-handler.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/supabaseClient.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/functions/supabaseClient.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +157,7 @@
       <workItem from="1722231641431" duration="114000" />
       <workItem from="1722338028377" duration="5857000" />
       <workItem from="1722389532684" duration="6840000" />
-      <workItem from="1722488307138" duration="2191000" />
+      <workItem from="1722488307138" duration="3166000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -484,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722490296110</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2024-08-01 - Supabase">
+      <option name="closed" value="true" />
+      <created>1722490550911</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1722490550911</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
