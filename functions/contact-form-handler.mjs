@@ -1,11 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 import { config } from 'dotenv';
 
-config();  // .env 파일의 환경 변수를 로드합니다.
+config(); // .env 파일에서 환경 변수를 로드합니다.
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
-
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export const handler = async (event) => {
@@ -13,7 +12,7 @@ export const handler = async (event) => {
         const { name, email, message } = JSON.parse(event.body);
 
         // 데이터베이스에 삽입
-        const {error } = await supabase
+        const { data, error } = await supabase
             .from('contact_form')
             .insert([{ name, email, message }]);
 
