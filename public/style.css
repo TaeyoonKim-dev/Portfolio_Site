@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("/assets/Photo/Main.png") no-repeat center center fixed, linear-gradient(var(--main-bg-color), var(--main-bg-color));
+    background: url("/public/assets/Photo/Main.png") no-repeat center center fixed, linear-gradient(var(--main-bg-color), var(--main-bg-color));
     background-size: cover;
     color: var(--text-color);
     overflow-x: hidden;

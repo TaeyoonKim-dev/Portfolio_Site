@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     const loadingMessage = document.querySelector('.loading-message');
 
+    // 로딩 화면 초기화
     if (loadingScreen) {
         document.body.classList.add('body-loading');
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('로딩 화면 요소를 찾을 수 없습니다.');
     }
 
+    // 스크롤 애니메이션
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav ul li a');
     const sections = document.querySelectorAll('section');
 
+    // 디바운스 함수
     function debounce(func, wait) {
         let timeout;
         return function() {
@@ -37,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
+    // 현재 섹션 하이라이트
     const handleScroll = debounce(() => {
         const scrollPosition = window.scrollY + 150;
 
@@ -54,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', handleScroll);
 
+    // 섹션 애니메이션
     const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -68,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sectionObserver.observe(section);
     });
 
+    // 풋터 효과
     const footer = document.querySelector('.footer');
 
     if (footer) {
@@ -86,39 +92,38 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Footer 요소를 찾을 수 없습니다.');
     }
 
-    const highlightCurrentSection = () => {
-        const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                section.classList.add('current');
-            } else {
-                section.classList.remove('current');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', highlightCurrentSection);
-    highlightCurrentSection();
-
+    // 폼 제출
     form.addEventListener('submit', function (e) {
         e.preventDefault();
+        const formData = new FormData(form);
+        const formObject = Object.fromEntries(formData.entries());
+
         loadingMessage.textContent = 'Please wait...';
         loadingScreen.style.display = 'flex';
 
-        setTimeout(() => {
-            form.reset();
-            loadingMessage.textContent = 'Submitted!';
-
-            setTimeout(() => {
-                loadingScreen.style.opacity = '0';
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formObject)
+        })
+            .then(response => response.json())
+            .then(data => {
+                form.reset();
+                loadingMessage.textContent = 'Submitted!';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                loadingMessage.textContent = 'Error occurred!';
+            })
+            .finally(() => {
                 setTimeout(() => {
-                    loadingScreen.style.display = 'none';
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 2000);
                 }, 2000);
-            }, 2000);
-        }, 2000);
+            });
     });
 });
