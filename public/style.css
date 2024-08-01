@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("/public/assets/Photo/Main.png") no-repeat center center fixed, linear-gradient(var(--main-bg-color), var(--main-bg-color));
+    background: url("https://i.ibb.co/b6JXwzc/Main.png") no-repeat center center fixed, linear-gradient(var(--main-bg-color), var(--main-bg-color));
     background-size: cover;
     color: var(--text-color);
     overflow-x: hidden;
@@ -354,7 +354,7 @@ body.body-loading {
 }
 
 /* 로딩 애니메이션 */
-.loading-screen {
+.loading-screen, .loading-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -384,22 +384,6 @@ body.body-loading {
     border: 8px solid var(--border-color);
     border-top: 8px solid var(--spinner-color);
     animation: spin var(--spinner-animation-speed) linear infinite, changeColor 3s linear infinite;
-}
-
-.loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* 로딩 화면 배경 색상 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 1s ease, visibility 1s ease;
 }
 
 .loading-overlay.hidden {
@@ -442,6 +426,54 @@ body.body-loading {
         display: none;
     }
     .nav-toggle:checked + .nav ul {
+        display: flex;
+    }
+}
+
+input[disabled], textarea[disabled], button[disabled] {
+    background-color: #e0e0e0; /* 비활성화된 필드의 배경 색상 */
+    cursor: not-allowed; /* 비활성화된 필드에 대한 커서 */
+    opacity: 0.6; /* 비활성화된 필드의 투명도 */
+    color: #888; /* 텍스트 색상 */
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-toggle {
+    display: none;
+}
+
+.navigation-label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.navigation-link:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .navigation-toggle:checked + .navigation-menu {
         display: flex;
     }
 }

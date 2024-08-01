@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Site</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="/main.js" defer></script>
-    <link rel="icon" type="image/png" href="/assets/Photo/favicon.png">
+    <title>Taeyoon's Portfolio Site</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="/public/main.js" defer></script>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/5nK656C/favicon.png">
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="Taeyoon's Portfolio Site">
     <meta property="og:description" content="Explore my projects, understand my skills, and get in touch.">
-    <meta property="og:image" content="/assets/Photo/favicon.png">
+    <meta property="og:image" content="https://i.ibb.co/5nK656C/favicon.png">
+    <meta property="og:url" content="https://your-website-url.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Taeyoon's Portfolio Site">
+    <meta name="twitter:description" content="Explore my projects, understand my skills, and get in touch.">
+    <meta name="twitter:image" content="https://i.ibb.co/5nK656C/favicon.png">
 </head>
 <body>
 <div class="container">
@@ -28,6 +33,7 @@
             </ul>
         </nav>
     </header>
+
     <section class="hero">
         <h2>Welcome to Taeyoon's Website</h2>
         <p>Explore my projects, understand my skills, and get in touch.</p>
@@ -35,71 +41,70 @@
             <button>Visit Website</button>
         </a>
     </section>
-</div>
 
-<section id="home" class="section">
-    <h2>Welcome to Taeyoon's Website</h2>
-    <p>Explore the world of web development!</p>
-    <a href="#about" class="button">Learn More About Me</a>
-</section>
+    <section id="home" class="section">
+        <h2>Welcome to Taeyoon's Website</h2>
+        <p>Explore the world of web development!</p>
+        <a href="#about" class="button">Learn More About Me</a>
+    </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Hello, I'm Taeyoon Kim, a first-year middle school student with a passion for web development. Currently based in Korea, I'm determined to become a skilled developer. I love exploring web development and creating exciting projects. Stay tuned to discover more about my work and interests!</p>
-    <a href="#" class="button">Learn More</a>
-</section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello, I'm Taeyoon Kim, a first-year middle school student with a passion for web development. Currently based in Korea, I'm determined to become a skilled developer. I love exploring web development and creating exciting projects. Stay tuned to discover more about my work and interests!</p>
+        <a href="#" class="button">Learn More</a>
+    </section>
 
-<section id="experience" class="section">
-    <h2>Experience & Skills</h2>
-    <p>Here are some of the skills and experiences I've gained in web development:</p>
-    <ul>
-        <!-- Skills List -->
-    </ul>
-</section>
+    <section id="experience" class="section">
+        <h2>Experience & Skills</h2>
+        <p>Here are some of the skills and experiences I've gained in web development:</p>
+        <ul>
+            <!-- Skills List -->
+        </ul>
+    </section>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>Check out some of my latest projects.</p>
-    <div class="project-cards">
-        <div class="project-card"><a href="#" class="button">Project 1</a></div>
-        <div class="project-card"><a href="#" class="button">Project 2</a></div>
-        <div class="project-card"><a href="#" class="button">Project 3</a></div>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Check out some of my latest projects.</p>
+        <div class="project-cards">
+            <div class="project-card"><a href="#" class="button">Project 1</a></div>
+            <div class="project-card"><a href="#" class="button">Project 2</a></div>
+            <div class="project-card"><a href="#" class="button">Project 3</a></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" class="email-link">taeyoonkim.business@gmail.com</a>.</p>
+        <form id="contact-form" action="/.netlify/functions/contact-form-handler" method="POST" autocomplete="off">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required disabled placeholder="Currently not supported">
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email" disabled placeholder="Currently not supported">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required disabled placeholder="Currently not supported"></textarea>
+            <button type="submit" disabled>Send Message</button>
+            <span class="loading-message"></span>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Taeyoon Kim. All rights reserved.</p>
+        <div class="license">
+            <p>
+                <a href="https://github.com/TaeyoonKim-dev/repository" class="license-link" target="_blank" rel="noopener noreferrer">Github Portfolio</a> by
+                <a href="https://www.instagram.com/taeyoon_0526" class="license-link" target="_blank" rel="noopener noreferrer">Taeyoon Kim</a> is licensed under
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="license-link" target="_blank" rel="license noopener noreferrer">CC BY-NC-ND 4.0</a>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="cc-icon">
+            </p>
+        </div>
+    </footer>
+
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
     </div>
-</section>
-
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:taeyoonkim.business@gmail.com" class="email-link">taeyoonkim.business@gmail.com</a>.</p>
-    <form id="contact-form" action="/.netlify/functions/contact-form-handler" method="POST" autocomplete="off">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required autocomplete="off">
-        <label for="email">Email (optional):</label>
-        <input type="email" id="email" name="email" autocomplete="off">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required autocomplete="off"></textarea>
-        <button type="submit">Send Message</button>
-        <span class="loading-message"></span>
-    </form>
-</section>
-
-<footer class="footer">
-    <p>&copy; 2024 Taeyoon Kim. All rights reserved.</p>
-    <div class="license">
-        <p>
-            <a href="https://github.com/TaeyoonKim-dev/repository" class="license-link" target="_blank" rel="noopener noreferrer">Github Portfolio</a> by
-            <a href="https://www.instagram.com/taeyoon_0526" class="license-link" target="_blank" rel="noopener noreferrer">Taeyoon Kim</a> is licensed under
-            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="license-link" target="_blank" rel="license noopener noreferrer">CC BY-NC-ND 4.0</a>
-            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="cc-icon">
-        </p>
-    </div>
-</footer>
-
-<div class="loading-screen">
-    <div class="loading-spinner"></div>
 </div>
-
 </body>
 </html>
