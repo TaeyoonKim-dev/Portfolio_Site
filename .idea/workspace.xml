@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-08-01 - Supabase">
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-08-01 - Netlify">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/contact-form-handler.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/functions/contact-form-handler.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +155,7 @@
       <workItem from="1722231641431" duration="114000" />
       <workItem from="1722338028377" duration="5857000" />
       <workItem from="1722389532684" duration="6840000" />
-      <workItem from="1722488307138" duration="3761000" />
+      <workItem from="1722488307138" duration="4319000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -501,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722491552620</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="2024-08-01 - Netlify">
+      <option name="closed" value="true" />
+      <created>1722492338097</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1722492338097</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,6 +556,7 @@
     <MESSAGE value="2024-07-31 - Refactor Netlify" />
     <MESSAGE value="2024-08-01" />
     <MESSAGE value="2024-08-01 - Supabase" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-08-01 - Supabase" />
+    <MESSAGE value="2024-08-01 - Netlify" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-08-01 - Netlify" />
   </component>
 </project>
