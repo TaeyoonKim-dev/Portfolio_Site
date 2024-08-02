@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-08-01 - Delete node.js and npm">
+    <list default="true" id="18895ac3-e658-4e81-b54d-6ced235116fa" name="변경" comment="2024-08-02 - Stylesheet">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
@@ -117,14 +118,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="2024-07-20">
-      <option name="closed" value="true" />
-      <created>1721467068650</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721467068650</updated>
-    </task>
     <task id="LOCAL-00002" summary="2024-07-20">
       <option name="closed" value="true" />
       <created>1721467101831</created>
@@ -156,7 +149,7 @@
       <workItem from="1722338028377" duration="5857000" />
       <workItem from="1722389532684" duration="6840000" />
       <workItem from="1722488307138" duration="6979000" />
-      <workItem from="1722584735088" duration="29000" />
+      <workItem from="1722584735088" duration="342000" />
     </task>
     <task id="LOCAL-00003" summary="2024-07-22">
       <option name="closed" value="true" />
@@ -526,7 +519,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722495301407</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="2024-08-01 - Stylesheet">
+      <option name="closed" value="true" />
+      <created>1722584822026</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1722584822026</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2024-08-02 - Stylesheet">
+      <option name="closed" value="true" />
+      <created>1722584842610</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1722584842611</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +584,9 @@
     <MESSAGE value="2024-08-01 - Supabase" />
     <MESSAGE value="2024-08-01 - Netlify" />
     <MESSAGE value="2024-08-01 - Delete node.js and npm" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-08-01 - Delete node.js and npm" />
+    <MESSAGE value="2024-08-01 - Stylesheet" />
+    <MESSAGE value="2024-08-02 - Stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-08-02 - Stylesheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
