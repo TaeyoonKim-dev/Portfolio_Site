@@ -97,24 +97,24 @@ To get started with this project, follow these steps:
 
     - **On macOS**: Use the following command:
     ```bash
-    open assets/index.html
+    open public/index.html
     ```
 
     - **On Windows**: Use the following command:
     ```bash
-    start assets\index.html
+    start public\index.html
     ```
 
    웹 브라우저에서 프로젝트를 보려면 `index.html` 파일을 엽니다.
 
     - **macOS에서**: 다음 명령어를 사용하세요:
     ```bash
-    open assets/index.html
+    open public/index.html
     ```
 
     - **Windows에서**: 다음 명령어를 사용하세요:
     ```bash
-    start assets\index.html
+    start public\index.html
     ```
 
 4. **Customize the Project**
